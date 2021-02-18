@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:ui="http://java.sun.com/JSP/Page" >
+ <th:block th:replace="fragments/fragment :: head"></th:block>
+<body>
+        <header>
+            <th:block th:replace="fragments/fragment :: navigation"></th:block>
+        </header>
+    <main>
+        <h1 class="text-center mt-2"><span class="badge badge-pill badge-dark">Products</span></h1>
+        <hr class="hr-3"/>
+        <div class="bg-blur container w-50">
+            <div class="row mb-4 d-flex flex-column text-center">
+                <a href="/products/details/Buzzer"><img library="img" src="/img/MALE-SHIRT.jpg" class="img-thumbnail" width="200"
+                      height="200"/>
+                </a>
+                 <h5 class="text-center">Buzzer</h5>
+                <h2 class="text-center">65.00</h2>
+            </div>
+        </div>
+    </main>
+    <span style="visibility: hidden">...</span>
+    <th:block th:replace="fragments/fragment :: footer"></th:block>
+</body>
+</html>
